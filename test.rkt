@@ -8,3 +8,5 @@
 
 
 (parse-cpp (read-file "test-parse-cpp.cpp"))
+
+(parse-cpp (read-file "test-parse-cpp1.cpp"))
