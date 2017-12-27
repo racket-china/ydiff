@@ -3,6 +3,12 @@ ydiff
 
 *a structural comparison tool for Lisp programs*
 
+```bash
+for file in `fg "*.cc"`; do echo "====="$file; cpp2lisp $file > $file.cast ; done
+
+for file in ` fg *.cast `; do fsize=`cat $file | wc -m`; if [[ fsize -ge 10000 ]]; then echo "=====$file====$fsize" ;fi ; done
+
+```
 
 ### Demo
 
